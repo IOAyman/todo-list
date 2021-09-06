@@ -1,0 +1,129 @@
+.container {
+    width: 70%;
+    min-width: 300px;
+    margin: 25px auto;
+    padding: 5px;
+}
+.container h1 {
+    text-align: center;
+    align-items: center;
+}
+.input-section {
+    width: 100%;
+    margin: 11px auto;
+    padding: 5px;
+}
+.todo-input {
+    width: 70%;
+    padding: 7px 15px;
+    margin: 7px 0;
+    font-size: 1.2rem;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+}
+.todo-submit {
+    width: 30%;
+    padding: 7px;
+    background-color: #ff8142;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;    
+}
+.todo-submit:hover {
+    background-color: #e85322;
+}
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.tasks-section {
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+.done {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.todo {
+    color: black;
+    font-size: 1.2rem;
+    padding: 7px 15px;
+    justify-content: center;
+    width: 70%;
+    min-width: 30%;
+}
+.id {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 11px;
+    background-color: #e85322;
+    color: #fff;
+    border-radius: 4px;
+    height: 100%;
+}
+.btn-container {
+    display: flex;
+}
+.btn {
+    font-size: 1rem;
+    padding: 7px 12px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-done {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-done:hover {
+    background-color: #0060c7;
+}
+.btn-delete {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-delete:hover {
+    background-color: #d43f3a;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 21px 7px;
+        padding: 0;
+    }
+    .input-section {
+        margin: 10px 0;
+    }
+    .todo-submit, .todo-input {
+        display: block;
+        width: 100%;
+    }
+    .id {
+        font-size: 1rem;
+        font-weight: normal;
+        padding: 5px 7px;
+    }
+    .todo {
+        font-size: 1rem;
+        padding: 7px 9px;
+    }
+    .btn {
+        padding: 5px 7px;
+    }
+} 
+/* end of responsive */
